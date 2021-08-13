@@ -1,4 +1,5 @@
 import './lib/lib';
+import $ from './lib/lib';
 
 $('.active').addClass('test', 'test1', 'test2');
 
@@ -9,3 +10,5 @@ $('.active').addClass('test', 'test1', 'test2');
 $('.btn').click(function() {
     $(this).toggleClass('active');
 });
+
+$('.btn').setAtr('data-btn', 'btn').removeAtr('data-btn');

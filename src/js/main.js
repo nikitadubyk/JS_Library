@@ -19,4 +19,7 @@ $('div').click(function() {
     console.log($(this).index());
 });
 
-console.log($('div').eq(3).find('.more'));
+// console.log($('div').eq(3).find('.more'));
+// console.log($('.some').closest('.findm11e'));
+
+console.log($('.more').eq(0).siblings());

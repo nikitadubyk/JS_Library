@@ -375,6 +375,18 @@ _core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.toggleClass = function (
   return this;
 };
 
+_core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.containsClass = function (className) {
+  for (let i = 0; i < this.length; i++) {
+    if (!this[i].classList) {
+      continue;
+    }
+
+    this[i].classList.contains(className);
+  }
+
+  return this;
+};
+
 /***/ }),
 
 /***/ "./src/js/lib/modules/display.js":
@@ -505,8 +517,9 @@ Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])('div').click(function (
   console.log(Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])(this).index());
 }); // console.log($('div').eq(3).find('.more'));
 // console.log($('.some').closest('.findm11e'));
+// console.log($('.more').eq(0).siblings());
 
-console.log(Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])('.more').eq(0).siblings());
+console.log(Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])('.more').containsClass('active'));
 
 /***/ })
 

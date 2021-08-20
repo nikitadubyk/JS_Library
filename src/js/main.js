@@ -25,3 +25,5 @@ $('div').click(function() {
 // console.log($('.more').eq(0).siblings());
 
 console.log($('.more').containsClass('active'));
+
+$('button').fadeIn(1800);

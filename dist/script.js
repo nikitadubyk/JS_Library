@@ -577,22 +577,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _lib_lib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lib/lib */ "./src/js/lib/lib.js");
 
 
-Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])('.active').addClass('test', 'test1', 'test2'); // $('.active').removeClass('test1', 'test2');
-// $('.active').removeClass();
-
-Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])('.btn').click(function () {
-  Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])('div').eq(2).toggleClass('active');
+Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])('#first').click(function () {
+  Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])('div').eq(1).fadeOut(800);
 });
-Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])('.btn').setAtr('data-btn', 'btn').removeAtr('data-btn'); // console.log($('button').html('change'));
-
-Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])('div').click(function () {
-  console.log(Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])(this).index());
-}); // console.log($('div').eq(3).find('.more'));
-// console.log($('.some').closest('.findm11e'));
-// console.log($('.more').eq(0).siblings());
-
-console.log(Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])('.more').containsClass('active'));
-Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])('button').fadeIn(1800);
+Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])('[data-count="second"]').click(function () {
+  Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])('div').eq(2).fadeOut(800);
+});
+Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])('button').eq(2).click(function () {
+  Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])('.w-500').fadeOut(800);
+});
 
 /***/ })
 

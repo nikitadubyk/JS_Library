@@ -1,0 +1,27 @@
+.hidden {
+    visibility: hidden;
+}
+.visibe {
+    visibility: visible;
+}
+.d-block {
+    display: block;
+}
+.d-none {
+    display: none;
+}
+.d-flex {
+    display: flex;
+}
+.f-centered {
+    align-items: center;
+    justify-content: center;
+}
+.f-space-around {
+    justify-content: space-around;
+    align-self: center;
+}
+.f-space-between {
+    justify-content: space-between;
+    align-self: center;
+}

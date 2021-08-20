@@ -1,17 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-button {
-    width: 200px;
-    height: 50px;
-    background-color: lightblue;
-    text-align: center;
-}
-
-.active {
-    font-size: 20px;
-    color: rgb(228, 7, 7);
-}
+@import './general/base';
+@import './general/typography';
+@import './general/variables';
+@import './components/ui';
+@import './helpers/classes';

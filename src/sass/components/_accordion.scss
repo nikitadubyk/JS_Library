@@ -1,0 +1,40 @@
+.accordion {
+    max-width: 700px;
+    &-heading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: 50px;
+        padding: 0 20px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        font-size: 20px;
+        cursor: pointer;
+        background-color: $dark;
+        color: #fff;
+        transition: background-color 0.3s;
+        &:hover {
+            background-color: darken($color: $dark, $amount: 10);
+        }
+        &--active {
+            background-color: darken($color: $primary, $amount: 10);
+        }
+    }
+    &-block {
+        width: 100%;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: all 0.6s;
+        background-color: #fff;
+        border: 1px solid rgba(224,211,211, 1.0);
+        border-top: none;
+        padding: 0;
+        &--active {
+            max-height: 100%;
+            opacity: 1;
+            overflow: visible;
+            padding: 20px
+        }
+    }
+}

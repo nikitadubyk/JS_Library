@@ -208,12 +208,19 @@ $('#trigger').click(() => $('#trigger').createModal({
 # Отступы
 Как это работает? <br>
 Для быстрого и удобного добавления отступов margin и padding используются специальные классы в CSS.
-````
-m10 = margin: 10px
-m20 = margin: 20px
-mt-10 = margin-top: 10px
-mt-20 = margin-top: 20px
-````
+| Класс | Значение |
+| ----- |:--------:|
+| .m10| margin: 10px|
+| .m20 | margin: 20px |
+| .mt-10 | margin-top: 10px |
+| .mt-20 | margin-top: 20px |
+| .mr-10 | margin-right: 10px |
+| .mr-20 | margin-right: 20px |
+| .ml-10 | margin-left: 10px |
+| .ml-20 | margin-left: 20px |
+| .mb-10 | margin-bottom: 10px |
+| .mb-20 | margin-bottom: 20px |
+
 И так далее. Для padding используется сокращения pt, pb, p. Просто добавьте в поле классов нужный вам отступ: 
 ````
 <button class="btn btn-primary m20" id="first">Text example</button>
@@ -221,26 +228,28 @@ mt-20 = margin-top: 20px
 
 # Отображение и расположение элементов
 Изменяйте свойство display при помощи быстрых и удобных классов. Вы можете комбинировать значение с другими классами для достижения желаемого расположения элемента.
-````
-.d-flex – display: flex
-.d-block – display: block
-.d-none – display: none
-````
+| Класс | Значение |
+| ----- |:--------:|
+| .d-flex | display: flex |
+| .d-block | display: block |
+| .d-non | display: none |
+
 Например:
 ````
 <div class="goods d-flex f-space-around"></div>
 ````
 Также существуют классы для расположения элементов, которые имеют **display: flex**
-````
-.f-centered – align-items: center, justify-content: center
-.f-space-around - align-items: center, justify-content: space-around
-.f-space-between - align-items: center, justify-content: space- between
-````
+| Класс | Значение |
+| ----- |:--------:|
+| .f-centered | align-items: center, justify-content: center |
+| .f-space-around | align-items: center, justify-content: space-around |
+| f-space-between | align-items: center, justify-content: space- between |
+
 Для изменения свойства **visible**:
-````
-.hidden – скрывает элемент с страницы
-.visible – отображает элемент на странице
-````
+| Класс | Значение |
+| ----- |:--------:|
+| .hidden | скрывает элемент с страницы |
+| .visible | отображает элемент на странице |
 
 # Текст
 Текст
@@ -253,13 +262,14 @@ mt-20 = margin-top: 20px
 
 # Размеры
 С помощью утилит ширины и высоты вы сможете легко создать элемент нужного размера.
-````
-.w-100 – ширина 100% по отношению к родительскому элементу
-.w-50 – ширина 50% по отношению к родительскому элементу
-.w-300 – ширина 300px
-.w-500 – ширина 500px
-.h-100 – высота 100% по отношению к родительскому элементу
-.h-50 – высота 50% по отношению к родительскому элементу
-.h-300 – высота 300px
-.h-500 – высота 500px
-````
+
+| Класс        | Что делает |
+| ------------- |:-------------:|
+| .w-100     | ширина 100% по отношению к родительскому элементу |
+| .w-50     | ширина 50% по отношению к родительскому элементу |
+| .w-300 | ширина 300px |
+| .w-500 | ширина 500px |
+| .h-100 | высота 100% по отношению к родительскому элементу |
+| .h-50 | высота 50% по отношению к родительскому элементу |
+| .h-300 | высота 300px |
+| .h-500 | высота 500px |
